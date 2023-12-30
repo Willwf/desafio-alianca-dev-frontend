@@ -7,7 +7,7 @@ export function TodoList() {
 
   return (
     <div>
-      <h2>Todo List</h2>
+      <h2>Tarefas</h2>
       <TodoForm />
 
       <ul>

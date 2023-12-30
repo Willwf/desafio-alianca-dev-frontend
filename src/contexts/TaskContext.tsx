@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useState } from 'react'
+import { ReactNode, createContext, useEffect, useState } from 'react'
 
 export interface Task {
   id: number
@@ -18,7 +18,14 @@ export const TaskContext = createContext<TaskContextProps | undefined>(
 )
 
 export function TaskProvider({ children }: { children: ReactNode }) {
-  const [tasks, setTasks] = useState<Task[]>([])
+  const [tasks, setTasks] = useState<Task[]>(() => {
+    const storedTasks = localStorage.getItem('tasks')
+    return storedTasks ? JSON.parse(storedTasks) : []
+  })
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+  }, [tasks])
 
   const addTask = (text: string) => {
     setTasks([...tasks, { id: Date.now(), text, completed: false }])
