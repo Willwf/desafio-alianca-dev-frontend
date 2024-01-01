@@ -1,0 +1,32 @@
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--primary-green);
+}
+
+.taskDescription input {
+  margin-right: 0.5rem;
+}
+
+.taskDescription {
+  padding: 0.5rem;
+}
+
+.taskContainer button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--light-turquoise);
+  transition: background-color 0.2s ease;
+}
+
+.taskContainer button:hover {
+  cursor: pointer;
+  background-color: var(--dark-turquoise);
+  color: white;
+}

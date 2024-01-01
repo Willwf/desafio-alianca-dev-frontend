@@ -1,9 +1,10 @@
-import React from 'react'
+import styles from './styles.module.css'
+import { useState } from 'react'
 import { useTaskContext } from '../../utils/useTaskContext'
 
 export function TodoForm() {
   const { addTask } = useTaskContext()
-  const [newTask, setNewTask] = React.useState('')
+  const [newTask, setNewTask] = useState('')
 
   function handleAddTask() {
     if (newTask.trim() !== '') {
@@ -13,7 +14,7 @@ export function TodoForm() {
   }
 
   return (
-    <div>
+    <div className={styles.formContainer}>
       <input
         type="text"
         value={newTask}

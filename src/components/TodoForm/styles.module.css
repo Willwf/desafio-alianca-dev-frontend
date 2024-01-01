@@ -1,0 +1,32 @@
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+
+  background-color: var(--primary-green);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.formContainer button,
+.formContainer input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.formContainer input {
+  width: 100%;
+}
+
+.formContainer button {
+  background-color: var(--light-turquoise);
+  transition: background-color 0.2s ease;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background-color: var(--dark-turquoise);
+  color: white;
+}

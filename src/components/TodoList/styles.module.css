@@ -1,0 +1,36 @@
+.main {
+  background-color: var(--primary-green);
+  min-height: 100vh;
+  padding: 4rem 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tasksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 90%;
+  background-color: var(--light-green);
+
+  margin-inline: auto;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.taskList {
+  width: 100%;
+}
+
+@media (min-width: 50em) {
+  .tasksContainer {
+    width: 50%;
+    padding: 2rem;
+  }
+}
