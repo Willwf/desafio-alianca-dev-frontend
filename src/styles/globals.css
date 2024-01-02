@@ -1,8 +1,8 @@
 :root {
-  --primary-green: #c6e6ea;
-  --light-green: #eafdff;
-  --light-turquoise: #87e8f5;
-  --dark-turquoise: #2593a1;
+  --background: #f8fefd;
+  --primary: #2dd9ba;
+  --secondary: #e988e2;
+  --accent: #e05570;
 }
 
 *,

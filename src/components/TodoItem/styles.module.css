@@ -6,7 +6,7 @@
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   border-radius: 1rem;
-  background-color: var(--primary-green);
+  background-color: var(--background);
 }
 
 .taskDescription input {
@@ -21,12 +21,12 @@
   border: none;
   padding: 0.5rem;
   border-radius: 1rem;
-  background-color: var(--light-turquoise);
+  background-color: var(--secondary);
   transition: background-color 0.2s ease;
 }
 
 .taskContainer button:hover {
   cursor: pointer;
-  background-color: var(--dark-turquoise);
+  background-color: var(--accent);
   color: white;
 }

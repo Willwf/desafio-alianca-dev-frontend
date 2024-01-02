@@ -1,5 +1,5 @@
 .main {
-  background-color: var(--primary-green);
+  background-color: var(--background);
   min-height: 100vh;
   padding: 4rem 0;
   font-family: 'Roboto', sans-serif;
@@ -11,7 +11,7 @@
   align-items: center;
   gap: 1.5rem;
   width: 90%;
-  background-color: var(--light-green);
+  background-color: var(--primary);
 
   margin-inline: auto;
   padding: 2rem 1rem;
